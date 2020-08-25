@@ -3,23 +3,24 @@
 
 # AVR128DB48 Gain and Offset Calibration of the Analog Signal Conditioning (OPAMP) Peripheral
 
-A new feature introduced in the AVR® DB MCU is the Analog Signal Conditioning (OPAMP) peripheral. The OPAMP peripheral can be configured as a PGA, in this example the internal DAC and ADC are used to calibrate gain and offset for the PGA. For more information on the calibration procedure, see the application note.   
+A new feature introduced in the AVR® DB MCU is the Analog Signal Conditioning (OPAMP) peripheral. The OPAMP peripheral can be configured as a PGA, in this example the internal DAC and ADC are used to calibrate gain and offset for the PGA. For more information on the calibration procedure, see the [application note](https://microchip.com/DS00003633).   
 
 ## Related Documentation
 
-* ANxxxx - Gain and Offset Calibration of the Analog Signal Conditioning (OPAMP) Peripheral
-* [AVR128DB48 device page](https://www.microchip.com/wwwproducts/en/AVR128DB48)
+* [AN3633 - Gain and Offset Calibration of the Analog Signal Conditioning (OPAMP) Peripheral](https://microchip.com/DS00003633)
+* AVR128DB48 Curiosity Nano User Guide (link will be added once available)
+* [AVR128DB48 Device Page](https://www.microchip.com/wwwproducts/en/AVR128DB48)
 
 ## Software Used
 * [MPLAB® X](https://www.microchip.com/mplab/mplab-x-ide) v5.40 or later
 * [MPLAB® XC8 Compiler](https://www.microchip.com/mplab/compilers) v2.20 or later
 * MPLABX AVR-Dx_DFP version 1.4.75 or later
-* For the Studio version of this project, please go to [this repository](https://github.com/microchip-pic-avr-examples/avr128db48-opamp-gain-and-offset-calibration)
+* For the Atmel Studio version of this project, please go to [this repository](https://github.com/microchip-pic-avr-examples/avr128db48-opamp-gain-and-offset-calibration)
 
 ## Hardware Used
 
-* [AVR128DB48 Curiosity Nano](https://www.microchip.com/wwwproducts/en/AVR128DB48)
-
+* [AVR128DB48 Curiosity Nano](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/EV35L43A)
+  
 ## Setup
 
 * No external hardware setup needed

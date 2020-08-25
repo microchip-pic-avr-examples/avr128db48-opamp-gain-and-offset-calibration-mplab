@@ -7,7 +7,7 @@
         "version": "1.0.0",
         "displayName": "Gain and Offset Calibration of the Analog Signal Conditioning (OPAMP) Peripheral",
         "projectName": "avr128db48-opamp-gain-and-offset-calibration-mplab",
-        "shortDescription": "Gain and Offset calibration of the Analog Signal Conditioning (OPAMP) Peripheral configured as a Programmable Gain Amplifier (PGA)",
+        "shortDescription": "This application note describes how to calibrate the gain and offset of the Analog Signal Conditioning (OPAMP) peripheral when configured as a Programmable Gain Amplifier (PGA). The microcontroller's (MCU's) internal digital-to-analog converter (DAC) and analog-to-digital converter (ADC) are used to perform the calibration procedure. No external components are required.",
         "ide": {
             "name": "MPLABX",
             "semverRange": ">=5.40"
@@ -20,7 +20,11 @@
         ],
         "dfp": {
             "name": "AVR-Dx_DFP",
-            "semverRange": ">=1.4.75"
+            "semverRange": "^1.4.75"
+        },
+		"configurator": {
+        	"name": "N/A",
+            "semverRange": ""
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -34,27 +38,35 @@
         },
         "author": "Microchip",
         "subcategories": [
-            "",
             [
-                "Device Family", "AVR DB"
+               "Peripherals", "OPAMP"
             ],
             [
-                "Development Board", "AVR128DB48 Curiosity Nano"
+               "Peripherals", "DAC"
+            ],            			
+            [
+               "Peripherals", "VREF"
+            ],
+			[
+               "Peripherals", "ADC"
+            ],
+            [
+               "Development Kit", "AVR128DB48 Curiosity Nano"
             ]
         ],
         "peripherals": [
             "OPAMP", "DAC", "VREF", "ADC"
         ],
         "keywords": [
-        "Analog Signal Conditioning",
-		"Operational Amplifier",
-		"Op Amp",
-		"Resistor Ladder",
-		"Amplifier",
-		"PGA",
-		"Gain",
-		"Offset",
-		"Calibration"
+			"Analog Signal Conditioning",
+			"Operational Amplifier",
+			"Op Amp",
+			"Resistor Ladder",
+			"Amplifier",
+			"PGA",
+			"Gain",
+			"Offset",
+			"Calibration"
         ],
         "additionalData": {
             "longDescription": {
