@@ -28,6 +28,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
+//To program the fuse bits, the FUSE macro is used. The fuse settings are set to the devices production values. 
 FUSES = {
 	.WDTCFG = 0x00, // WDTCFG {PERIOD=OFF, WINDOW=OFF}
 	.BODCFG = 0x10, // BODCFG {SLEEP=DISABLE, ACTIVE=DISABLE, SAMPFREQ=32Hz, LVL=BODLEVEL0}
@@ -38,6 +39,7 @@ FUSES = {
 	.BOOTSIZE = 0x00, // BOOTSIZE
 };
 
+//Macro used to set lockbits. Set to production value.
 LOCKBITS = {
 	0x5CC5C55C, // KEY {KEY=NOLOCK}
 };
