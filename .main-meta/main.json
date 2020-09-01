@@ -7,7 +7,7 @@
         "version": "1.0.0",
         "displayName": "Gain and Offset Calibration of the Analog Signal Conditioning (OPAMP) Peripheral",
         "projectName": "avr128db48-opamp-gain-and-offset-calibration-mplab",
-        "shortDescription": "This application note describes how to calibrate the gain and offset of the Analog Signal Conditioning (OPAMP) peripheral when configured as a Programmable Gain Amplifier (PGA). The microcontroller's (MCU's) internal digital-to-analog converter (DAC) and analog-to-digital converter (ADC) are used to perform the calibration procedure. No external components are required.",
+        "shortDescription": "This MPLAB X bare metal example in Gain and Offset Calibration of the Analog Signal Conditioning (OPAMP) Peripheral (AN3633) shows how to calibrate the gain and offset of the OPAMP when configured as a Programmable Gain Amplifier (PGA). The internal Digital-to-Analog converter (DAC) and Analog-to-Digital converter (ADC) are used to perform the calibration procedure. No external components are required.",
         "ide": {
             "name": "MPLABX",
             "semverRange": ">=5.40"
@@ -43,9 +43,6 @@
             ],
             [
                "Peripherals", "DAC"
-            ],            			
-            [
-               "Peripherals", "VREF"
             ],
 			[
                "Peripherals", "ADC"
@@ -55,7 +52,7 @@
             ]
         ],
         "peripherals": [
-            "OPAMP", "DAC", "VREF", "ADC"
+            "OPAMP", "DAC", "ADC"
         ],
         "keywords": [
 			"Analog Signal Conditioning",
@@ -67,6 +64,9 @@
 			"Gain",
 			"Offset",
 			"Calibration"
+			"AVR-DB",
+			"AVRDB",
+			"opamp-gain-and-offset-calibration"
         ],
         "additionalData": {
             "longDescription": {
