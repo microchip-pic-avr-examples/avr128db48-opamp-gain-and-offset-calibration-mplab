@@ -63,7 +63,7 @@
 			"PGA",
 			"Gain",
 			"Offset",
-			"Calibration"
+			"Calibration",
 			"AVR-DB",
 			"AVRDB",
 			"opamp-gain-and-offset-calibration"
