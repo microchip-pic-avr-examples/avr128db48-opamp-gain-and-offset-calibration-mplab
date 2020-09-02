@@ -28,20 +28,20 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
-//To program the fuse bits, the FUSE macro is used. The fuse settings are set to the devices production values.
+// To compile the fuse configuration, the FUSES macro is used. The fuse settings are set to the device production values.
 FUSES = {
-    .WDTCFG = 0x00, // WDTCFG {PERIOD=OFF, WINDOW=OFF}
-    .BODCFG = 0x00, // BODCFG {SLEEP=DISABLE, ACTIVE=DISABLE, SAMPFREQ=128Hz, LVL=BODLEVEL0}
-    .OSCCFG = 0x00, // OSCCFG {CLKSEL=OSCHF}
-    .SYSCFG0 = 0xC0, // SYSCFG0 {EESAVE=DISABLE, RSTPINCFG=INPUT, CRCSEL=CRC16, CRCSRC=NOCRC}
-    .SYSCFG1 = 0x08, // SYSCFG1 {SUT=0MS, MVSYSCFG=DUAL}
-    .CODESIZE = 0x00, // CODESIZE
-    .BOOTSIZE = 0x00, // BOOTSIZE
+    .WDTCFG = FUSE_WDTCFG_DEFAULT,
+    .BODCFG = FUSE_BODCFG_DEFAULT,
+    .OSCCFG = FUSE_OSCCFG_DEFAULT,
+    .SYSCFG0 = FUSE_SYSCFG0_DEFAULT,
+    .SYSCFG1 = FUSE_SYSCFG1_DEFAULT,
+    .CODESIZE = FUSE_CODESIZE_DEFAULT,
+    .BOOTSIZE = FUSE_BOOTSIZE_DEFAULT,
 };
-//Macro used to set lockbits. Set to production value.
+// To compile the lockbits configuration, the LOCKBITS macro is used. The lockbits are set to unlocked.
 LOCKBITS = {
-    0x5CC5C55C, // KEY {KEY=NOLOCK}
-};  
+    LOCKBITS_DEFAULT,
+};
 
 // The VREF (Voltage Reference) peripheral will be set up to generate a
 // reference voltage of 2.5 V
